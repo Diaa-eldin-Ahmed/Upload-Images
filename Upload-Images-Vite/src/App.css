@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    background: #7b2cbf;
+    background: linear-gradient(26deg, #7b2cbf 0%, #eac5fa 70%);
+    background: -webkit-linear-gradient(26deg, #7b2cbf 0%, #eac5fa 70%);
+    background: -moz-linear-gradient(26deg, #7b2cbf 0%, #eac5fa 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-files-container {
+    background-color: #f7fff7;
+    width: 420px;
+    padding: 30px 60px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px,
+        rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+.second-container {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+}
+.image-chosen {
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text 2s linear infinite;
+    display: inline-block;
+    font-size: large;
+}
+
+@keyframes text {
+    to {
+        background-position: 200% center;
+    }
+}
+.uploadBtn {
+    font-family: verdana;
+    font-weight: bold;
+    color: #ffffff !important;
+    font-size: 16px;
+    text-shadow: 0px 0px 0px #7cacde;
+    box-shadow: 1px 1px 1px #bee2f9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 0px solid #7b2cbf;
+    background: #7b2cbf;
+}
+.uploadBtn:hover {
+    color: #ffffff !important;
+    background: #7b2cbf;
+    background: linear-gradient(to top, #7b2cbf, #63b8ee);
+}
+.select-image-text {
+    color: #7b2cbf;
+    margin-bottom: 3%;
+    margin-right: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: #7b2cbf 3px dashed;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+.select-image-text:hover {
+    color: #ffffff !important;
+    background: #7b2cbf;
+    background: linear-gradient(to top, #7b2cbf, #63b8ee);
+    border: #fff 3px solid;
+}
