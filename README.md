@@ -20,9 +20,11 @@ Run the server-side
 
 ```bash
   cd server
+  npm install
   npm start
 ```
 Run the client-side
 ```bash
   cd Upload-Images-Vite
+  npm install
   npm run dev
